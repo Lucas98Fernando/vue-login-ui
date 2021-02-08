@@ -12,18 +12,14 @@ export default {
   components: {
     MainContainer,
   },
-  data() {
-    return {
-      images: {
-        business: require("./assets/images/business.png"),
-      },
-    };
-  },
+  data() {},
 };
 </script>
 
 <style lang="scss">
 #app {
+  display: flex;
+  align-items: center;
   min-height: 100vh;
   background: linear-gradient(to right, #41b883, #83c5be);
   padding: 30px 0 0;

@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import {
-  BootstrapVue,
-} from 'bootstrap-vue'
+import { BootstrapVue } from 'bootstrap-vue'
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
@@ -16,7 +14,7 @@ Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
 
-library.add(faUserSecret)
+library.add(fas)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

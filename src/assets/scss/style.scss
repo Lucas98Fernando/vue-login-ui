@@ -1,9 +1,10 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+
 body,
 html {
     height: 100vh !important;
 }
-
-@import "./variables.scss";
 
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
