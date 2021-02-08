@@ -18,7 +18,8 @@
     "gulp-sass": "^4.1.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
