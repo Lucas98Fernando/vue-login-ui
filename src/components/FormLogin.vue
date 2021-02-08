@@ -24,7 +24,7 @@
           ></b-form-input>
         </b-form-group>
 
-        <a href="#" class="forgotPassord text-center">Esqueceu a senha ?</a>
+        <a href="#" class="forgotPassword text-center">Esqueceu a senha ?</a>
 
         <div class="d-flex justify-content-center mt-4">
           <b-button type="submit" variant="primary" class="btn-login"
@@ -71,35 +71,43 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/scss/variables.scss";
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
 #cardLogin {
   border-radius: 15px;
-  box-shadow: 0px 0px 10px #999;
-}
+  box-shadow: 0px 0px 10px $gray;
 
-#formLogin {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-}
+  #formLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
 
-.logoLogin {
-  margin: 0 auto;
-  width: 100px;
-}
+  .logoLogin {
+    margin: 0 auto;
+    width: 100px;
+  }
 
-.forgotPassword {
-  color: #41b883 !important;
-  text-decoration: none !important;
-}
+  .forgotPassword {
+    color: $primary;
+    text-decoration: none;
+  }
 
-.btn-login {
-  width: 200px;
-  background-color: #41b883 !important;
-  border: none !important;
-  padding: 5px 10px !important;
-  font-size: 1.3rem !important;
-  font-weight: 600 !important;
+  .btn-login {
+    width: 200px;
+    background-color: $primary;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $secondary;
+      transition: .5s ease-in-out;
+    }
+  }
 }
 </style>

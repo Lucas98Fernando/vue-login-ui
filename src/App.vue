@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   min-height: 100vh;
   background: linear-gradient(to right, #41b883, #83c5be);

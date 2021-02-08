@@ -26,7 +26,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #mainContainer {
   width: 100%;
   height: auto;
