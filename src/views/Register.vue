@@ -1,5 +1,6 @@
 <template>
   <b-container id="mainContainer" align-v="center">
+    <BlobBg />
     <b-row align-v="center" align-h="center">
       <b-col md="6">
         <FormRegister />
@@ -18,10 +19,12 @@
 
 <script>
 import FormRegister from "../components/FormRegister";
+import BlobBg from "../components/BlobBg";
 
 export default {
   components: {
     FormRegister,
+    BlobBg
   },
 };
 </script>
