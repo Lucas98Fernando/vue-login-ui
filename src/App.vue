@@ -1,20 +1,8 @@
 <template>
   <div id="app">
-    <MainContainer />
+    <router-view />
   </div>
 </template>
-
-<script>
-import MainContainer from "./components/MainContainer";
-
-export default {
-  name: "App",
-  components: {
-    MainContainer,
-  },
-  data() {},
-};
-</script>
 
 <style lang="scss">
 #app {
@@ -25,8 +13,8 @@ export default {
   /* background: url('./assets/images/bg.jpg'); */
   background: linear-gradient(
       to bottom,
-      rgba(65, 184, 131, 0.7) 0%,
-      rgba(131, 197, 190, 0.7) 100%
+      rgba(65, 184, 131, 0.5) 0%,
+      rgba(131, 197, 190, 0.5) 100%
     ),
     url("./assets/images/bg.jpg");
   background-position: center;

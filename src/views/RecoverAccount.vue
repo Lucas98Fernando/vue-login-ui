@@ -2,11 +2,11 @@
   <b-container id="mainContainer" align-v="center">
     <b-row align-v="center" align-h="center">
       <b-col md="6">
-        <FormLogin />
+        <FormRecover />
       </b-col>
       <b-col md="6">
         <b-img
-          src="../assets/images/business.png"
+          src="../assets/images/business-coffee.png"
           fluid
           class="businessImg"
           center
@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import FormLogin from "./FormLogin";
+import FormRecover from "../components/FormRecover";
 
 export default {
   components: {
-    FormLogin,
+    FormRecover,
   },
 };
 </script>

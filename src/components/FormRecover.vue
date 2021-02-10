@@ -14,17 +14,11 @@
           />
         </svg>
 
-        <h1 class="text-center mb-3">Login</h1>
-        <h2 class="text-center mb-4">Bem-vindo(a) de volta!</h2>
-        <!-- <b-img src="../assets/images/logo.png" fluid class="logoLogin mb-4" /> -->
-        <div class="d-flex justify-content-center mb-4">
-          <b-img src="../assets/images/google.png" fluid class="icons" />
-          <b-img src="../assets/images/facebook.png" fluid class="icons mx-4" />
-          <b-img src="../assets/images/twitter.png" fluid class="icons" />
-        </div>
-        <span class="text-center mb-4 other-account"
-          >Ou entre com sua conta</span
-        >
+        <h1 class="text-center mb-3">Recuperar conta</h1>
+        <h2 class="text-center mb-4">
+          Informe o e-mail da sua conta e deixe o resto conosco
+        </h2>
+
         <b-form-group id="input-group-1" label-for="email">
           <b-form-input
             id="email"
@@ -36,32 +30,6 @@
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-2" label-for="input-2">
-          <b-form-input
-            id="passord"
-            class="input"
-            v-model="form.name"
-            placeholder="Senha"
-            type="password"
-            required
-          ></b-form-input>
-        </b-form-group>
-
-        <div class="d-flex justify-content-between flex-wrap">
-          <b-form-checkbox value="remember" class="remember"
-            >Lembrar senha</b-form-checkbox
-          >
-          <div>
-            <router-link to="/recover" class="forgotPassword">Esqueceu a senha ?</router-link>
-          </div>
-        </div>
-
-        <!-- <div class="d-flex justify-content-center mt-3">
-          <b-button type="submit" variant="primary" class="btn-login"
-            >Entrar <font-awesome-icon icon="arrow-right" class="arrow"
-          /></b-button>
-        </div> -->
-
         <div class="d-flex justify-content-center mt-3">
           <a href="#">
             <font-awesome-icon icon="arrow-right" class="arrow-btn" />
@@ -69,8 +37,8 @@
         </div>
 
         <div class="d-flex justify-content-center flex-wrap mt-4 register">
-          <span class="mr-2">Ainda não possui conta ?</span>
-          <router-link to="/register" class="createAccount">Criar conta</router-link>
+          <span class="mr-2">Já recuperou a conta ?</span>
+          <a @click="$router.go(-1)" class="loginAccount">Entrar</a>
         </div>
       </b-form>
     </b-card>
@@ -221,9 +189,10 @@ body {
       color: $lightBlack;
     }
 
-    .createAccount {
+    .loginAccount {
       color: $primary;
       text-decoration: none;
+      cursor: pointer;
     }
   }
 }

@@ -14,8 +14,8 @@
           />
         </svg>
 
-        <h1 class="text-center mb-3">Login</h1>
-        <h2 class="text-center mb-4">Bem-vindo(a) de volta!</h2>
+        <h1 class="text-center mb-3">Cadastro</h1>
+        <h2 class="text-center mb-4">Registre-se com:</h2>
         <!-- <b-img src="../assets/images/logo.png" fluid class="logoLogin mb-4" /> -->
         <div class="d-flex justify-content-center mb-4">
           <b-img src="../assets/images/google.png" fluid class="icons" />
@@ -23,8 +23,19 @@
           <b-img src="../assets/images/twitter.png" fluid class="icons" />
         </div>
         <span class="text-center mb-4 other-account"
-          >Ou entre com sua conta</span
+          >Ou crie sua própria conta</span
         >
+        <b-form-group id="input-group-1" label-for="email">
+          <b-form-input
+            id="name"
+            class="input"
+            v-model="form.name"
+            type="text"
+            placeholder="Nome completo"
+            required
+          ></b-form-input>
+        </b-form-group>
+
         <b-form-group id="input-group-1" label-for="email">
           <b-form-input
             id="email"
@@ -47,13 +58,10 @@
           ></b-form-input>
         </b-form-group>
 
-        <div class="d-flex justify-content-between flex-wrap">
+        <div class="d-flex justify-content-start flex-wrap">
           <b-form-checkbox value="remember" class="remember"
-            >Lembrar senha</b-form-checkbox
+            >Li e concordo com os termos de uso</b-form-checkbox
           >
-          <div>
-            <router-link to="/recover" class="forgotPassword">Esqueceu a senha ?</router-link>
-          </div>
         </div>
 
         <!-- <div class="d-flex justify-content-center mt-3">
@@ -69,8 +77,8 @@
         </div>
 
         <div class="d-flex justify-content-center flex-wrap mt-4 register">
-          <span class="mr-2">Ainda não possui conta ?</span>
-          <router-link to="/register" class="createAccount">Criar conta</router-link>
+          <span class="mr-2">Já possui conta ?</span>
+          <a @click="$router.go(-1)" class="loginAccount">Entrar</a>
         </div>
       </b-form>
     </b-card>
@@ -221,9 +229,10 @@ body {
       color: $lightBlack;
     }
 
-    .createAccount {
+    .loginAccount {
       color: $primary;
       text-decoration: none;
+      cursor: pointer;
     }
   }
 }
