@@ -1,4 +1,14 @@
-# login
+<h1 align="center">Templates UI - Vue JS and BootstrapVue</h1>
+<p align="center">Login, register and recover account UI</p>
+
+<h2>Login screen:</h2>
+<img src="src/assets/images/login.jpg">
+
+<h2>Register screen:</h2>
+<img src="src/assets/images/register.jpg">
+
+<h2>Recover password screen:</h2>
+<img src="src/assets/images/recover.jpg">
 
 ## Project setup
 ```
