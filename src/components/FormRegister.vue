@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-card id="cardLogin">
+    <b-card id="cardLogin" class="scale-in-bl">
       <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="formLogin">
         <svg
           viewBox="0 0 200 200"
@@ -121,6 +121,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/scss/animations.scss";
 @import "../assets/scss/variables.scss";
 @import "../assets/scss/fonts.scss";
 @import "node_modules/bootstrap/scss/bootstrap.scss";

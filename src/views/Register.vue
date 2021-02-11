@@ -9,7 +9,7 @@
         <b-img
           src="../assets/images/business-like.png"
           fluid
-          class="businessImg"
+          class="businessImg scale-in-bottom"
           center
         />
       </b-col>
