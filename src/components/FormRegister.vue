@@ -124,7 +124,6 @@ export default {
 @import "../assets/scss/animations.scss";
 @import "../assets/scss/variables.scss";
 @import "../assets/scss/fonts.scss";
-@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
   font-family: $OpenSans !important;
